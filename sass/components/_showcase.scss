@@ -1,0 +1,8 @@
+.showcase {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: moveInBottom 1s linear 0.5s 1 forwards;
+}

@@ -1,0 +1,124 @@
+.section-hero {
+  width: 100%;
+  height: calc(100vh - 7rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  &__background {
+    background: var(--gradient-ps-1), url("../img/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+}
+.section-destination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  & > *:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+.section-tours {
+  background: var(--color-grey-l2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  & > *:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+.section-testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  & > *:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .testimonial {
+    width: 75%;
+    & > *:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+    @include responsive(bp-600) {
+      width: 95%;
+    }
+    &__quote {
+      font-size: 2rem;
+      color: var(--color-grey-d1);
+      text-align: center;
+      display: block;
+    }
+    &__author {
+      display: block;
+      font-size: 1.6rem;
+      margin: 2.5rem 0;
+    }
+  }
+}
+.section-contact {
+  background: var(--color-grey-l2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  & > *:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .form {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include responsive(bp-800) {
+      width: 80%;
+      flex-flow: column nowrap;
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+    @include responsive(bp-600) {
+      width: 95%;
+    }
+    &__input {
+      width: 50%;
+      font-size: 1.8rem;
+      font-family: inherit;
+      color: var(--color-grey-d1);
+      padding: 0.8rem 1rem;
+      display: inline-block;
+      margin-right: 2rem;
+      outline: none;
+      border: 1px solid var(--color-grey-l1);
+      border-bottom: 3px solid var(--color-grey-l1);
+      @include responsive(bp-800) {
+        width: 100%;
+      }
+      &::placeholder {
+        color: var(--color-grey-l1);
+      }
+      &:focus {
+        border-bottom: 3px solid var(--color-primary-d);
+      }
+      &:focus:invalid {
+        border-bottom: 3px solid #e74c3c;
+      }
+    }
+    &__btn {
+      display: inline-block;
+    }
+  }
+}

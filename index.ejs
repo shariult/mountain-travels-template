@@ -1,0 +1,134 @@
+<%- include('partials/head') %> <%- include('partials/navbar') %>
+
+<section class="section-hero">
+  <div class="section-hero__background"></div>
+  <div class="showcase">
+    <h1 class="heading-1 showcase__heading-1 mb-1">Mountain Travel</h1>
+    <h2 class="heading-2 showcase__heading-2 mb-2">
+      Unmissable adventure tours around the world
+    </h2>
+    <a href="#contact" class="btn btn--primary showcase__link"
+      >Contact us now</a
+    >
+  </div>
+</section>
+<section class="section-destination" id="about">
+  <h3 class="heading-3">Some of our destination</h3>
+  <p class="paragraph paragraph--centered">
+    Tired of the ocean? Are the plains too plain? Come along with us on one of
+    our mountain adventures. Here are some pictures from people who have had
+    elevated experiences with us.
+  </p>
+  <span class="h-line h-line--primary"></span>
+  <div class="image-gallery">
+    <img
+      src="img/mountain1.jpg"
+      alt="Mountain 1"
+      class="image-gallery__image"
+    />
+    <img
+      src="img/mountain2.jpg"
+      alt="Mountain 2"
+      class="image-gallery__image image-gallery__image--wide"
+    />
+    <img
+      src="img/mountain3.jpg"
+      alt="Mountain 3"
+      class="image-gallery__image image-gallery__image--wide"
+    />
+    <img
+      src="img/mountain4.jpg"
+      alt="Mountain 4 "
+      class="image-gallery__image"
+    />
+  </div>
+</section>
+<section class="section-tours" id="tours">
+  <h3 class="heading-3">Tour Packages</h3>
+  <p class="paragraph paragraph--centered">
+    We offer a variety of mountaineering packages. Whether you've climbed
+    Everest or don't even know what a mountain is, we've got the perfect
+    vacation for you.
+  </p>
+  <span class="h-line h-line--primary"></span>
+  <div class="tours">
+    <div class="card">
+      <i class="card__icon fa-solid fa-compass"></i>
+      <h3 class="heading-3 card__heading">Guided trips</h3>
+      <p class="paragraph card__text">
+        Looking for the complete experience? Take a tour with one of our
+        experts. They'll show you secrets that you're likely to miss otherwise.
+      </p>
+    </div>
+    <div class="card">
+      <i class="card__icon fa-solid fa-camera-retro"></i>
+      <h3 class="heading-3 card__heading">Photo trips</h3>
+      <p class="paragraph card__text">
+        Want to experience nature's beauty without all of that annoying
+        exercise? Take a photo tour on one of our mountain buses.
+      </p>
+    </div>
+    <div class="card">
+      <i class="card__icon fa-solid fa-biking"></i>
+      <h3 class="heading-3 card__heading">Biking trips</h3>
+      <p class="paragraph card__text">
+        If bicycles are more your speed, consider taking a tour through one of
+        our mountain bike paths. We'll provide the bikes, and lunch too!
+      </p>
+    </div>
+    <div class="card">
+      <i class="card__icon fa-solid fa-flag-checkered"></i>
+      <h3 class="heading-3 card__heading">Racing trips</h3>
+      <p class="paragraph card__text">
+        Got a competitive spirit? Sign up for one of our mountain marathons! Try
+        to reach the summit before anyone else.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section-testimonials">
+  <h3 class="heading-3">Testimonials from out adventurers</h3>
+  <span class="h-line h-line--primary"></span>
+  <div class="testimonial">
+    <blockquote class="testimonial__quote">
+      Wow! This tour made me realize how much I love mountains. After going on
+      one of these tours, I can safely say that they are my favorite geographic
+      feature, and my favorite word that starts with M.
+      <span class="testimonial__author">- Colt steele</span>
+    </blockquote>
+    <blockquote class="testimonial__quote">
+      I never understood why people cared so much about mountains. But then I
+      went on one of these tours. Now I can't understand people who don't care
+      about mountains!
+      <span class="testimonial__author">- Elie Schoppik</span>
+    </blockquote>
+    <blockquote class="testimonial__quote">
+      If you want to understand the universe, head to the mountains. I mean,
+      seriously. It's like, woah. You know? It's like that.
+      <span class="testimonial__author">- Tim Garcia</span>
+    </blockquote>
+  </div>
+</section>
+<section class="section-contact" id="contact">
+  <h3 class="heading-3">Learn more</h3>
+  <p class="paragraph paragraph--centered">
+    Want to know about our upcoming mountain-related events, or come to one of
+    our mixers? Just sign up for our mailing list. No spam from us, we promise!
+    Except for the spam we give you to keep up your energy while you're hiking
+    through the mountains. We have tons of that.
+  </p>
+  <span class="h-line h-line--primary"></span>
+  <form action="#" class="form" method="post">
+    <input
+      type="email"
+      name="email"
+      id="email"
+      class="form__input"
+      placeholder="Email"
+      required
+    />
+    <button class="btn btn--primary form__btn">Subscribe now</button>
+  </form>
+</section>
+
+<%- include('partials/footer') %> <%- include('partials/end') %>

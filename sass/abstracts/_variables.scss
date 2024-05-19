@@ -1,0 +1,41 @@
+:root {
+  //==========================================
+  // Color variables
+  //==========================================
+  --color-primary-d: #3f51b5;
+  --color-primary-l: #8c9eff;
+
+  --color-secondary: #607d8b;
+
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-grey-font: #777777;
+  --color-grey-d1: #555;
+  --color-grey-d2: #999;
+
+  --color-grey-l1: #ccc;
+  --color-grey-l2: #f0eeee;
+  --color-grey-l3: #f4f2f2;
+  --color-grey-l4: #faf9f9;
+
+  //==========================================
+  // Font variables
+  //==========================================
+  --font-size-default: 1.6rem;
+  --font-family-heading: "Quicksand", sans-serif;
+
+  //==========================================
+  // Box-Shadows
+  //==========================================
+  --shadow-dark-1: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+  //==========================================
+  // Gradients
+  //==========================================
+  --gradient-ps-1: linear-gradient(
+    to right bottom,
+    rgba(63, 81, 181, 0.7),
+    rgba(96, 125, 139, 0.7)
+  );
+}

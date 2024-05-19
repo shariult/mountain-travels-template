@@ -1,0 +1,23 @@
+.image-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  &__image {
+    display: block;
+    flex-grow: 1;
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    margin: 2rem;
+    @include responsive(bp-600) {
+      width: 20rem;
+    }
+    &--wide {
+      width: 45rem;
+      flex-grow: 3;
+      flex-shrink: 2;
+      @include responsive(bp-600) {
+        width: 20rem;
+      }
+    }
+  }
+}

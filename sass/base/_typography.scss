@@ -1,0 +1,68 @@
+.heading-1 {
+  font-size: 6.5rem;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+  color: var(--color-grey-l4);
+  @include responsive(bp-950) {
+    font-size: 5rem;
+  }
+  @include responsive(bp-600) {
+    font-size: 3.5rem;
+  }
+}
+.heading-2 {
+  font-size: 3rem;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-grey-l4);
+  @include responsive(bp-950) {
+    font-size: 2.5rem;
+  }
+  @include responsive(bp-600) {
+    font-size: 2rem;
+  }
+}
+.heading-3 {
+  font-size: 3.5rem;
+  font-family: var(--font-family-heading);
+  font-weight: bolder;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--color-grey-d1);
+  @include responsive(bp-950) {
+    font-size: 3rem;
+  }
+  @include responsive(bp-600) {
+    font-size: 2rem;
+  }
+}
+.heading-6 {
+  font-size: 2.3rem;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  @include responsive(bp-950) {
+    font-size: 2rem;
+  }
+}
+.paragraph {
+  font-size: var(--font-size-default);
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+  color: var(--color-grey-d1);
+  &--centered {
+    width: 65%;
+    text-align: center;
+    @include responsive(bp-800) {
+      width: 80%;
+    }
+    @include responsive(bp-600) {
+      width: 100%;
+    }
+  }
+}

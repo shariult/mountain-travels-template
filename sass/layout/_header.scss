@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100%;
+  & > * {
+    padding: 3rem 8rem;
+    padding-bottom: 0;
+  }
+  &__brand {
+    color: var(--color-grey-l2);
+    opacity: 0;
+    animation: moveInLeft 1s linear 0.1s 1 forwards;
+  }
+}

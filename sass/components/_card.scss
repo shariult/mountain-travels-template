@@ -1,0 +1,33 @@
+.tours {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  flex: 0 1 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 2rem;
+  @include responsive(bp-950) {
+    flex-basis: 70%;
+  }
+  @include responsive(bp-800) {
+    flex-basis: 80%;
+  }
+  @include responsive(bp-600) {
+    flex-basis: 100%;
+  }
+  & > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  &__icon {
+    color: var(--color-primary-l);
+    display: block;
+    font-size: 6.4rem;
+  }
+  &__text {
+    text-align: center;
+  }
+}
